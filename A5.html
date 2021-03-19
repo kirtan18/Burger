@@ -1,0 +1,25 @@
+<!-- Implement a Custom Countdown Timer where an user can input Value for Timer -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<p>click the button to the prompt box</p>
+
+	<button onclick="custominput()">Click here</button>
+
+	<p id="demo"></p>
+<script>
+	function custominput(){
+		var person = prompt(" Enter your time " , "Name" );
+        if(person != null){
+          document.getElementById("demo").innerHTML = "Hello " + person + " ! How are you today?";
+        }
+
+	}
+</script>
+</body>
+</html>

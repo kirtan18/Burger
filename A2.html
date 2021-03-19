@@ -1,0 +1,28 @@
+<!-- Write a function to add 2 numbers using the prototype function. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	function addNumber(num1,num2){
+		this.number1 = num1;
+		this.number2 = num2;
+	}
+
+	addNumber.prototype.sum = function(){
+		return this.number1 + this.number2;
+	}
+
+
+	var sum = function addNumber(a,b){
+         return this.number1 + this.number2;
+	};
+
+	console.log(sum);
+
+</script>
+</body>
+</html>
