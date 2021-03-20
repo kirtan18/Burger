@@ -7,11 +7,15 @@
 </head>
 <body>
 <script>
+	function addNumber(a,b,Callback){
+    	var sum = Callback(a,b);
+    	return sum;
+        }   
+ 
 	function add(num1,num2){
-		var sum = num1 + num2;
-		console.log("sum : " + sum);
+		return num1 + num2;
 	}
-	add(18,22);
+	console.log(addNumber(18,22,add()));
 
 </script>
 </body>
